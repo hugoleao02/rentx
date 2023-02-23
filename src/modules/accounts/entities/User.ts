@@ -12,19 +12,19 @@ class User {
   name: string;
 
   @Column()
+  username: string;
+
+  @Column()
   password: string;
 
   @Column()
   email: string;
 
-  @Column({ name: 'driver_license' })
+  @Column()
   driver_license: string;
 
-  @Column()
+  @Column({ default: false })
   isAdmin: boolean;
-
-  @Column()
-  avatar: string;
 
   @CreateDateColumn()
   created_at: Date;
