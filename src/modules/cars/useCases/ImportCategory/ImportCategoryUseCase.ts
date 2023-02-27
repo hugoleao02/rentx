@@ -1,7 +1,5 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { parse as csvParse } from 'csv-parse';
 import fs from 'fs';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { inject, injectable } from 'tsyringe';
 
 import { ICategoriesRepository } from '../../repositories/ICategoriesRepository';
