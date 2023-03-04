@@ -24,12 +24,12 @@ class CreateUserUseCase {
       throw new AppError('User already exits!!');
     }
 
-    const passworHash = await hash(password, 8);
+    const passwordHash = await hash(password, 8);
 
     await this.usersRepository.create({
       name,
       email,
-      password: passworHash,
+      password: passwordHash,
       driver_license,
     });
   }
